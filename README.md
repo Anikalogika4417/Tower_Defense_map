@@ -15,10 +15,10 @@ Implement constructors - default, move, copy, get/set methods
 - nickname (string)
 - ID of the game character, (string)
 - id of the faction (string)
-- class fraction
+3) Class fraction
 - name (string)
 - id of the fraction
-3) Class of the playing field, arbitrary size: (n, m)
+4) Class of the playing field, arbitrary size: (n, m)
 - to store cells and use vector (std::vector)
 - list of players
 - list of phrases
