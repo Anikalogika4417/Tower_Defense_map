@@ -1,16 +1,19 @@
 #include <iostream>
 #include "Cell.h"
+#include "Player.h"
 
 
 int main()
 {
-    Cell first_cell(FILD, 2.0, { true, WOOD, 2 });
-    Cell second_cell(HILL, 2.0, { false });
-    Cell third_cell(first_cell);
-    third_cell.Set_cell_id_hero("Sapa");
+    Player player1("Nuta", "1");
+    Player player2("Sapa", "2");
+    Player player3(player1);
 
-    std::cout << "1 - " << first_cell.Get_cell_id_hero() << std::endl;
-    std::cout << "3 - " << third_cell.Get_cell_id_hero() << std::endl;
+    std::cout << player1.Get_player_id() << std::endl;
+    std::cout << player2.Get_player_id() << std::endl;
+    std::cout << player3.Get_player_id() << std::endl;
+
+    std::cout << "Count of players: " << Player::Get_player_counter() << std::endl;
 
 }
 
