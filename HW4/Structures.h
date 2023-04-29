@@ -12,11 +12,11 @@ enum resource_types
 	NONE,
 	STONE,
 	WOOD, 
-	ORE,  //????
+	ORE,
 	CRYSTALS, 
 	PRECIOUS_STONES, 
-	MERCURY,   //?????
-	SULFUR,  //????
+	MERCURY, 
+	SULFUR,
 	GOLD
 };
 
