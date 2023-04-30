@@ -13,7 +13,7 @@ public:
 		int coming_cell_tower_exist = 0
 		);
 
-	Cell(Cell& cell);
+	Cell(const Cell& cell);
 
 	cell_types Get_cell_type();
 

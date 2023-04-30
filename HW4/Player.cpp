@@ -10,7 +10,7 @@ Player::Player(std::string coming_player_name, std::string coming_player_fractio
 	player_counter++;
 }
 
-Player::Player(Player& player)
+Player::Player(const Player& player)
 {
 	this->player_name = std::move(player.player_name);
 	this->player_id = std::to_string(player_counter);
@@ -33,7 +33,7 @@ std::string Player::Get_player_fraction_id()
 	return this->player_fraction_id;
 }
 
-void Player::Ser_player_fraction_id(std::string _fraction_id)
+void Player::Set_player_fraction_id(std::string _fraction_id)
 {
 	this->player_fraction_id = _fraction_id;
 }

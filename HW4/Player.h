@@ -10,12 +10,12 @@ public:
 		std::string coming_player_fraction_id
 	);
 
-	Player(Player& player);
+	Player(const Player& player);
 
 	std::string Get_player_name();
 	std::string Get_player_id();
 	std::string Get_player_fraction_id();
-	void Ser_player_fraction_id(std::string _fraction_id);
+	void Set_player_fraction_id(std::string _fraction_id);
 
 	static int Get_player_counter();
 
