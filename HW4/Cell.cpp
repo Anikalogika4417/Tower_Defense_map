@@ -17,7 +17,7 @@ Cell::Cell(cell_types coming_cell_type,
 
 };
 
-Cell::Cell(Cell& cell)
+Cell::Cell(const Cell& cell)
 {
 	this->cell_type = cell.cell_type;
 	this->cell_coef_patency = cell.cell_coef_patency;
