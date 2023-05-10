@@ -2,6 +2,12 @@
 
 int Fraction::fraction_counter = 1;
 
+Fraction::Fraction()
+{
+}
+
+
+
 Fraction::Fraction(std::string coming_fraction_name)
 {
 	this->fraction_name = coming_fraction_name;

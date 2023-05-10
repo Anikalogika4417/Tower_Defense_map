@@ -1,6 +1,9 @@
 #include "Cell.h"
 
 
+Cell::Cell()
+{
+}
 
 Cell::Cell(cell_types coming_cell_type,
 	double coming_cell_coef_patency,
@@ -25,6 +28,25 @@ Cell::Cell(const Cell& cell)
 	this->cell_influence = cell.cell_tower_exist;
 	this->cell_id_hero = std::move(cell.cell_id_hero);
 	this->cell_tower_exist = cell.cell_tower_exist;
+}
+
+Cell::Cell(Cell&& other) noexcept
+{
+	// Move the data from the other object to this object
+	this->cell_type = other.cell_type;
+	this->cell_coef_patency = other.cell_coef_patency;
+	this->cell_resourse = std::move(other.cell_resourse);
+	this->cell_influence = other.cell_influence;
+	this->cell_id_hero = std::move(other.cell_id_hero);
+	this->cell_tower_exist = other.cell_tower_exist;
+
+	// Set the other object's data to a default state
+	other.cell_type = cell_types::FILD;
+	other.cell_coef_patency = 0.0;
+	other.cell_resourse = { false, resource_types::NONE };
+	other.cell_influence = 0;
+	other.cell_id_hero = "";
+	other.cell_tower_exist = 0;
 }
 
 

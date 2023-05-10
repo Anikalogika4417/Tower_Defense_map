@@ -4,6 +4,8 @@
 class Player
 {
 public:
+	Player();
+
 
 	Player(
 		std::string coming_player_name,

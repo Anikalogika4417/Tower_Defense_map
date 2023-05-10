@@ -128,14 +128,20 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Cell.cpp" />
+    <ClCompile Include="Fild.cpp" />
     <ClCompile Include="Fraction.cpp" />
     <ClCompile Include="HW4.cpp" />
+    <ClCompile Include="Lib.cpp" />
     <ClCompile Include="Player.cpp" />
+    <ClCompile Include="Resourse.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Cell.h" />
+    <ClInclude Include="Fild.h" />
     <ClInclude Include="Fraction.h" />
+    <ClInclude Include="Lib.h" />
     <ClInclude Include="Player.h" />
+    <ClInclude Include="Resourse.h" />
     <ClInclude Include="Structures.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
