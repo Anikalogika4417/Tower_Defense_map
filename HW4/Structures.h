@@ -1,15 +1,19 @@
 #pragma once
-enum cell_types 
+#include "Cell.h"
+#include "Fraction.h"
+#include "Player.h"
+
+enum class cell_types 
 {
-	FILD,
+	FILD = 0,
 	SWAMP,
 	HILL,
 	MOUNTAIN
 };
 
-enum resource_types 
+enum class resource_types 
 {
-	NONE,
+	NONE = 0,
 	STONE,
 	WOOD, 
 	ORE,
@@ -20,9 +24,18 @@ enum resource_types
 	GOLD
 };
 
+
+
 struct cell_resourses
 {
 	bool resourse_availability;
-	resource_types resourse_type = NONE;
+	resource_types resourse_type = resource_types::NONE;
 	int resourse_speed = 0;
 };
+
+struct fild_size
+{
+	int quantity;
+	cell_types type_of_sell;
+};
+

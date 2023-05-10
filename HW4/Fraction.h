@@ -4,6 +4,10 @@
 class Fraction
 {
 public:
+	Fraction();
+
+	
+
 
 	Fraction(std::string coming_fraction_name);
 

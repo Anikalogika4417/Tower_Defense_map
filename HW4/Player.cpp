@@ -2,6 +2,11 @@
 
 int Player::player_counter = 1;
 
+Player::Player()
+{
+}
+
+
 Player::Player(std::string coming_player_name, std::string coming_player_fraction_id)
 {
 	this->player_name = coming_player_name;

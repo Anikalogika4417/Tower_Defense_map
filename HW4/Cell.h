@@ -5,6 +5,8 @@
 class Cell
 {
 public:
+	Cell();
+
 	Cell(
 		cell_types coming_cell_type,
 		double coming_cell_coef_patency,
@@ -14,6 +16,8 @@ public:
 		);
 
 	Cell(const Cell& cell);
+
+	Cell(Cell&& other) noexcept;
 
 	cell_types Get_cell_type();
 
